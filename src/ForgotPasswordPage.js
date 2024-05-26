@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Yönlendirme için ekledik
-import './ForgotPassword.css'; // Stil dosyasını içe aktar
+import { useNavigate } from 'react-router-dom';
+import './ForgotPassword.css';
 
 const ForgotPasswordPage = () => {
   const [email, setEmail] = useState('');
   const [successfulCreation, setSuccessfulCreation] = useState(false);
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Yönlendirme için ekledik
+  const navigate = useNavigate(); // Yönlendirme için bu kısmı ekledik.
 
   const sendEmail = async (email, code) => {
     try {
@@ -26,7 +26,7 @@ const ForgotPasswordPage = () => {
       if (emailSent) {
         setSuccessfulCreation(true);
         setError('');
-        navigate('/reset-password'); // Başarılı gönderimden sonra yönlendirme yapıyoruz
+        navigate('/reset-password'); // Başarılı gönderimden sonra yönlendirme yapıyoruz.
       } else {
         setError('Failed to send reset code');
       }
