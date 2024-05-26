@@ -86,7 +86,7 @@ const QuestionSets = () => {
             <div className='divSetAdd'>
                 <h2>Choose a title: </h2>
                 <input className="inputSet" type='text' value={newTitle} onChange={(e) => setNewTitle(e.target.value)} />
-                <button className="butonSet" onClick={() => addNewSet(username, newTitle)}>Add set</button>
+                <button className="butonSet" onClick={() => addNewSet(username, newTitle)}>Add Set</button>
             </div>
         </div>
     );
