@@ -148,9 +148,9 @@ const Final = () => {
           )}
         </div>
         <div className="spread-apart">
-          <button className='prevButton' onClick={handlePrev}>Previous</button>
+          <button className='prevButton' onClick={handlePrev}>PREVIOUS</button>
           <button className='shuffleButton' onClick={shuffleData}>Shuffle</button>
-          <button className='nextButton' onClick={handleNext}>Next</button>
+          <button className='nextButton' onClick={handleNext}>NEXT</button>
         </div>
       </div>
     </div>
