@@ -1,19 +1,15 @@
-/* Satır bileşeni */
 .lineComp {
     margin-bottom: 1em;
 }
 
-/* Son satır bileşeni */
 .lineComp:last-child {
     margin-bottom: 2em;
 }
 
-/* İçerik */
 span {
     margin: 0.5em;
 }
 
-/* Giriş alanları */
 input {
     all: unset;
     background-color: white;
@@ -22,12 +18,10 @@ input {
     padding: 0.5em;
 }
 
-/* Arka plan */
 .background {
     height: auto;
 }
 
-/* Silme düğmesi */
 .buttonDelete {
     all: unset;
     border: 1px solid black;
