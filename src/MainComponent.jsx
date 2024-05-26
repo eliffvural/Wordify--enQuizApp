@@ -60,7 +60,7 @@ const MainComponent = () => {
     const saveBox = document.getElementById('saveBox');
     if (saveBox) {
       saveBox.classList.remove('simpleBox');
-      void saveBox.offsetWidth; // Trigger reflow to restart animation
+      void saveBox.offsetWidth; 
       saveBox.classList.add('simpleBox');
     } else {
       console.error("saveBox doesn't exist.");
