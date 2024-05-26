@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // useNavigate kancasını ekleyin
-import './ResetPassword.css'; // Yeni stil dosyasını içe aktar
+import { useNavigate } from 'react-router-dom';
+import './ResetPassword.css';
 
 const ResetPassword = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const navigate = useNavigate(); // useNavigate kancasını kullanarak navigate işlevini alın
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,11 +13,11 @@ const ResetPassword = () => {
       alert('Şifreler eşleşmiyor!');
       return;
     }
-    // Şifre sıfırlama isteği backend'e gönderilecek
+    // Şifre sıfırlama isteği backend'e gönderilecek.
     console.log('Şifre sıfırlandı:', password);
 
-    // Şifre sıfırlama işlemi tamamlandıktan sonra giriş ekranına yönlendirin
-    navigate('/signin'); // '/signin' rotasına yönlendirme yapın
+    // Şifre sıfırlama işlemi tamamlandıktan sonra giriş ekranına yönlendiriyoruz.
+    navigate('/signin'); // '/signin' sayfasına yönelendirme yapıyoruz.
   };
 
   return (
