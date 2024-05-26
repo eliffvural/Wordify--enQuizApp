@@ -25,7 +25,7 @@ const ResetPassword = () => {
       <div className="reset-password-card">
         <h2>Şifre Sıfırlama</h2>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="password">Yeni Şifre:</label>
+          <label htmlFor="password">Yeni Şifre: </label>
           <input
             type="password"
             id="password"
